@@ -1,0 +1,28 @@
+<!doctype html><html lang="fr"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Inviter un partenaire — BioSnap AI Market</title><link rel="manifest" href="/manifest.webmanifest"/>
+<link rel="icon" href="/icons/icon-192.png" type="image/png"/>
+<script>if('serviceWorker'in navigator){addEventListener('load',()=>navigator.serviceWorker.register('/sw.js').catch(console.error));}</script>
+<script type="module">
+  async function submitForm(e){
+    e.preventDefault();
+    const data=Object.fromEntries(new FormData(e.target).entries());
+    const hook=(import.meta?.env?.VITE_CLICK_WEBHOOK)||'';
+    try{ if(hook){ await fetch(hook,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({type:'partner_form',...data,ts:new Date().toISOString()})}); } }catch(e){}
+    const body=encodeURIComponent(JSON.stringify(data,null,2));
+    location.href=`mailto:contact@biosnap.ai?subject=Nouvelle%20demande%20partenaire&body=${body}`;
+  }
+  window.submitForm=submitForm;
+</script>
+</head><body style="background:#0b1220;color:#e2e8f0;font-family:ui-sans-serif,system-ui;padding:24px">
+<h1>Devenir partenaire affilié</h1>
+<form onsubmit="submitForm(event)">
+  <label>Entreprise</label><input name="company" required style="width:100%"/>
+  <label>Site</label><input name="website" type="url" required style="width:100%"/>
+  <label>Email</label><input name="email" type="email" required style="width:100%"/>
+  <label>Catégories</label><input name="categories" style="width:100%"/>
+  <label>Lien d’affiliation</label><input name="affiliate_url" type="url" style="width:100%"/>
+  <label>Message</label><textarea name="message" rows="6" style="width:100%"></textarea>
+  <button type="submit" style="margin-top:12px;background:#3fbf7b;color:#fff;border:0;padding:10px 14px;border-radius:10px">Envoyer</button>
+</form>
+<p style="margin-top:16px"><a href="/" style="color:#93c5fd">← Retour</a></p>
+</body></html>

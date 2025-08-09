@@ -1,0 +1,7 @@
+name = "biosnap-worker"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+[[kv_namespaces]]
+binding = "BIOSNAP_KV"
+id = "REPLACE_WITH_NAMESPACE_ID"

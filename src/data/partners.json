@@ -1,0 +1,75 @@
+[
+  {
+    "name": "Botanic (FR)",
+    "description": "Jardinage, semences, plants — FR.",
+    "logo": "https://logo.clearbit.com/botanic.com",
+    "categories": [
+      "Semences",
+      "Plantes",
+      "Jardinage"
+    ],
+    "country": [
+      "FR"
+    ],
+    "affiliate_url": "https://partner.example.com/botanic"
+  },
+  {
+    "name": "Truffaut",
+    "description": "Semences, outils, serres.",
+    "logo": "https://logo.clearbit.com/truffaut.com",
+    "categories": [
+      "Semences",
+      "Outils",
+      "Serres"
+    ],
+    "country": [
+      "FR"
+    ],
+    "affiliate_url": "https://partner.example.com/truffaut"
+  },
+  {
+    "name": "Bakker",
+    "description": "Bulbes, plantes d’extérieur.",
+    "logo": "https://logo.clearbit.com/bakker.com",
+    "categories": [
+      "Bulbes",
+      "Plantes",
+      "Extérieur"
+    ],
+    "country": [
+      "FR",
+      "EU"
+    ],
+    "affiliate_url": "https://partner.example.com/bakker"
+  },
+  {
+    "name": "ManoMano",
+    "description": "Équipements jardin & serre.",
+    "logo": "https://logo.clearbit.com/manomano.fr",
+    "categories": [
+      "Serres",
+      "Équipement",
+      "Arrosage"
+    ],
+    "country": [
+      "FR",
+      "EU"
+    ],
+    "affiliate_url": "https://partner.example.com/manomano"
+  },
+  {
+    "name": "Amazon Jardin",
+    "description": "Catalogue jardin (conditions pays).",
+    "logo": "https://logo.clearbit.com/amazon.com",
+    "categories": [
+      "Jardin",
+      "Semences",
+      "Outils"
+    ],
+    "country": [
+      "FR",
+      "EU"
+    ],
+    "affiliate_url": "https://partner.example.com/amazon"
+  }
+]
